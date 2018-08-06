@@ -153,14 +153,14 @@ switch($_GET["action"]) {
         if (!empty($product_array)) { 
             foreach($product_array as $key=>$value){
         ?>
-            <div class="product-item img-thumbnail col-md-5 m-3" style="height: 26vw; overflow: scroll;">
+            <div class="product-item img-thumbnail col-md-5 m-3" style="height: 28vw; overflow: scroll;">
                 <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>" class="d-flex flex-column justify-content-between">
                 <!-- <div class="d-flex flex-column justify-content-between mb-5"> -->
                     <!-- <div class="product-image"> -->
-                        <img src="images/<?php echo $product_array[$key]["image"]; ?> " style="height: 16vw;">
+                        <img src="images/<?php echo $product_array[$key]["image"]; ?> " style="height: 19vw;">
                     <!-- </div> -->
                     <div class="caption">
-                        <h4 class="font-weight-bold"><?php echo $product_array[$key]["name"]; ?></h4>
+                        <h4 class="font-weight-bold">- <?php echo $product_array[$key]["name"]; ?> -</h4>
                         <p><?php echo $product_array[$key]["description"]; ?></p>
                         <input type="text" name="quantity" value="1" size="2" />
                         <input type="submit" value="Ajouter au panier" class="btnAddAction btn btn-success" />
@@ -177,6 +177,7 @@ switch($_GET["action"]) {
     </div>
 
 <!-- :::::::::::::::::::: fin panier :::::::::::::::::::::::::::::: -->
+
 
             <!-- <div class="container"> -->
             <?php
