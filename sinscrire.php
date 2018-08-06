@@ -3,7 +3,7 @@ require 'admin/database.php';
 
 $db = Database::connect();
 
-//j'initialise mes variables //l'utilisateur n'a pas encore cliqué = 1°lecture
+// j'initialise mes variables l'utilisateur n'a pas encore cliqué = 1°lecture 
 $firstname = $name = $mail = $psw = "";
 $firstnameError = $nameError = $mailError = $pswError = "";
 

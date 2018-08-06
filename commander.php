@@ -37,7 +37,7 @@
             <a class="btn btn-success ml-3" href="s'inscrire.php">S'inscrire</a>
             <a class="btn btn-success" href="seconnecter.php">Se connecter</a>
             <br>
-            <a class="btn btn-lg btn-primary mt-3" href="index.php">retour</a>
+            <a class="btn btn-lg btn-primary mt-3" href="index.php">Retour</a>
             </div>
 
             </div>

@@ -14,9 +14,7 @@ if(isset($_POST) && !empty($_POST['email']) && !empty($_POST['psw'])) {
 //   var_dump($data);
 
   if($data['clients_mail'] != $email && $data['clients_psw'] != $psw ) {
-    $message = '<p class="text-center red">Mauvais login / password <br> Merci de recommencer</p>';
-
-
+      echo '<p class="text-center red">Mauvais login / password <br> Merci de recommencer</p>';
   }
   else {
     session_start();
@@ -81,7 +79,7 @@ if(isset($_POST) && !empty($_POST['email']) && !empty($_POST['psw'])) {
                 <fieldset>
                     <legend><h1>Se connecter</h1></legend>
                     <div class="row">
-                        <div class="mx-auto"><?php echo $message; ?></div>
+                        
                         <div class="offset-md-1 col-md-10">
                             <label for="name">Email *</label>
                             <input type="text" name="email" class="form-control" placeholder="Votre Email">
